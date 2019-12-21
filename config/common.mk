@@ -30,6 +30,10 @@ DU_PRODUCT_PROPERTIES += \
 DU_PRODUCT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
+# Gestures
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
 # Init files
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/dirtyunicorns.rc:system/etc/init/dirtyunicorns.rc
